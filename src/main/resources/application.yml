@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: server-peer0
+  client:
+    service-url:
+      defaultZone: https://localhost:8081/eureka/
