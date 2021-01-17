@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 8081
 
 eureka:
   instance:
-    hostname: server-peer0
+    hostname: server-peer1
   client:
     service-url:
-      defaultZone: https://server-peer1:8081/eureka/
+      defaultZone: https://server-peer0:8080/eureka/
