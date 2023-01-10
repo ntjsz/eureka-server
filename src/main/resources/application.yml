@@ -3,7 +3,6 @@ server:
 
 eureka:
   instance:
-    hostname: server-peer0
   client:
     service-url:
-      defaultZone: http://server-peer1:8081/eureka/
+      defaultZone: http://127.0.0.1:8080/eureka/
