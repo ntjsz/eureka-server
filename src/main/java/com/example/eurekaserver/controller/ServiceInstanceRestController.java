@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.time.LocalDateTime;
 
 
 @RestController
@@ -20,7 +21,9 @@ public class ServiceInstanceRestController {
 
     @GetMapping("/remote")
     public String remote() {
+        System.out.println(LocalDateTime.now() + "  remote start.");
         sentinelRemoteFeign.echo("sentinel-remote");
+        System.out.println(LocalDateTime.now() + "  remote end.");
         return "ok";
     }
 }
