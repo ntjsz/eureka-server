@@ -12,7 +12,7 @@ public class ServiceInstanceRestController {
 
     @GetMapping("/echo")
     public String echo(@RequestParam("hi") String content) {
-        System.out.println(LocalDateTime.now() + "   " + content);
+        System.out.println(LocalDateTime.now() + "  " + content);
         return content;
     }
 }
