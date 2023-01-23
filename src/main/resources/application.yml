@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: sentinel-client-1
+  cloud:
+    sentinel:
+      transport:
+        port: 8720
+        dashboard: 127.0.0.1:8090
 
 eureka:
   instance:
